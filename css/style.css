@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -10,10 +10,10 @@
 :root {
   --gray-color: #e9ecec;
   --background-color: #f6f6f6;
-  --font-family: "Ubuntu", sans-serif;
+  --font-family: "Roboto Slab", serif;
   --font-weight: bold;
   --main-color: #48a111;
-  --secondary-color: #d3f9ce;
+  --secondary-color: #eeffeb99;
   --para-color: #545454;
   --h1-color: #000000;
   --black-color: #2c2c2c;
@@ -32,6 +32,7 @@
 /* menubar  */
 .menubar {
   display: none;
+  border: none;
 }
 
 /* menubar  */
@@ -44,13 +45,14 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 100;
   box-shadow: 1px 1px 15px #514f4f;
 }
 .navlinks {
   display: flex;
   justify-content: space-between;
 }
+
 .navlinks a {
   /* background: green; */
   margin: 0.5rem;
@@ -62,11 +64,11 @@
   color: var(--main-color);
 }
 .active {
-  background-color: var(--secondary-color);
-  color: var(--black-color) !important;
+  background-color: var(--main-color);
+  color: var(--white-color) !important;
 }
 .navlinks a:hover {
-  color: var(--black-color);
+  color: var(--black-color) !important;
   background-color: var(--secondary-color);
   transition: all 0.3s;
   box-shadow: 1px 1px 15px var(--main-color);
@@ -93,8 +95,10 @@
   margin: 1rem 0;
 }
 .hero_card h1 {
-  color: var(--black-color);
+  font-weight: var(--font-weight);
+  color: var(--main-color);
   margin: 1rem 0;
+  text-shadow: 1px 1px 1px var(--black-color);
 }
 .hero_card p {
   color: var(--para-color);
@@ -102,7 +106,7 @@
 }
 .hero_card button {
   padding: 0.8rem 1.2rem;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   width: 130px;
   margin: 0.5rem;
   cursor: pointer;
@@ -120,9 +124,13 @@
   background-color: var(--secondary-color);
   color: var(--main-color);
 }
+.hero_card .btn_2:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  box-shadow: 1px 1px 15px var(--secondary-color);
+}
 .hero_card .btn_1,
 .btn_2:hover {
-  box-shadow: 1px 1px 15px var(--secondary-color);
   transition: all 0.3s;
 }
 .hero_card .btn_2 {
@@ -130,30 +138,40 @@
   color: var(--main-color);
 }
 .hero_card-img img {
-  filter: drop-shadow(0 0 10px gold);
+  filter: drop-shadow(0 0 15px black);
 }
 /* home section  */
-.reviews h1 {
+.about-title {
   text-align: center;
   color: var(--main-color);
   font-family: var(--font-family);
   font-weight: var(--font-weight);
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 1rem 0;
+  text-shadow: 1px 1px 1px var(--black-color);
+}
+.home-title {
+  text-align: center;
+  color: var(--main-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: 1rem;
+  margin: 1rem 0;
+  text-shadow: 1px 1px 1px var(--black-color);
 }
 .home {
   width: 100%;
 
   /* background-color: greenyellow; */
   background-attachment: fixed;
-  padding: 2rem;
+  padding: 2rem 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
 .home div {
-  flex: 1 1 350px;
+  flex: 1 1 320px;
   background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
@@ -167,12 +185,15 @@
 .home div h3 {
   margin: 1rem 0;
 }
+.home div p {
+  color: var(--para-color);
+}
 /* about section  */
 .about {
   width: 100%;
   /* min-height: 100vh; */
   /* background-color: blue; */
-  padding: 2rem;
+  padding: 2.5rem 3rem;
   background-attachment: fixed;
   display: flex;
   flex-wrap: wrap;
@@ -189,13 +210,14 @@
 }
 .about div h3 {
   margin: 1rem 0;
+  color: var(--main-color);
 }
 .about div p {
   color: var(--para-color);
 }
 .about div button {
   width: 120px;
-  padding: 0.8rem 1rem;
+  padding: 0.5rem 1rem;
   border: 1px solid var(--main-color);
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -215,9 +237,53 @@
 /* service section  */
 .service {
   width: 100%;
-  min-height: 100vh;
-  background-color: orange;
+  background-color: var(--secondary-color);
   background-attachment: fixed;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.service div {
+  flex: 1 1 350px;
+  padding: 1rem;
+  font-family: var(--font-family);
+}
+.service div h4 {
+  color: var(--main-color);
+  margin: 1rem 0;
+}
+.service div h1 {
+  color: var(--main-color);
+}
+.service div p {
+  color: var(--para-color);
+  margin: 1rem 0;
+}
+.service div button {
+  width: 120px;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--main-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: 1rem;
+  color: var(--white-color);
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+.service div button:hover {
+  background-color: var(--secondary-color);
+  transition: all 0.3s;
+  box-shadow: 1px 1px 15px var(--main-color);
+  color: var(--black-color);
+}
+.service-img img {
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 15px var(--black-color);
 }
 /* contact section  */
 .contact {

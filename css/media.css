@@ -5,5 +5,20 @@
   .menubar {
     display: block;
     font-size: 2rem;
+    cursor: pointer;
+  }
+  .hidden {
+    position: absolute;
+    display: block;
+    background: rgb(216, 216, 216);
+    width: 100%;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    transform: translateY(-150%);
+    z-index: 3;
+  }
+  .hidden a {
+    display: flex;
   }
 }
