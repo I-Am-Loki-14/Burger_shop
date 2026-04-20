@@ -241,7 +241,6 @@ label[for="dark"] {
   gap: 2.5rem;
 }
 .about div {
-  padding: 1.5rem;
   flex: 1 1 250px;
   border-radius: 0.5rem;
   font-family: var(--font-family);
