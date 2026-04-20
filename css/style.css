@@ -211,7 +211,7 @@ label[for="dark"] {
 }
 .home div {
   flex: 1 1 350px;
-  background-color: var(--secondary-color);
+  background-color: var(--gray-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,3 +431,36 @@ label[for="dark"] {
     1px 1px 5px var(--main-color),
     inset 1px 1px 5px var(--white-color);
 }
+/* copy right section  */
+.copyright {
+  color: var(--main-color);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: var(--font-weight);
+  /* text-shadow: 1px 1px 1px var(--black-color); */
+  margin: 1rem 0;
+  padding: 2rem 0;
+}
+.copyright span {
+  color: var(--main-color);
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.3rem;
+  background-color: var(--gray-color);
+  font-weight: var(--font-weight);
+}
+/* upTo  */
+.upto {
+  z-index: 1000;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+/* .upto:hover {
+  background-color: var(--secondary-color);
+  transition: ease 0.3s;
+} */
