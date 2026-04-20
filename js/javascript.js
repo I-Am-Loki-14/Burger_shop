@@ -20,7 +20,8 @@ const navlinks = document.querySelector('.navlinks');
 
 
 menutoggle.addEventListener('click' , ()=>{
-    document.body.classList.toggle('show')
-    console.log("Menu Bar Clicked & Toggle");
+    // menutoggle.classList.toggle("show")
+    navlinks.classList.toggle("show")
+    console.log("Menu Click");
     
 })

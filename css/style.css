@@ -65,7 +65,8 @@ label[for="dark"] {
   background-color: transparent;
 }
 .navlinks.show {
-  transform: translateY(0) !important;
+  /* transform: translateY(0) !important; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 /* menubar  */
@@ -78,7 +79,7 @@ label[for="dark"] {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   box-shadow: 1px 1px 15px #514f4f;
 }
 .navlinks {

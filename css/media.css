@@ -1,4 +1,4 @@
-@media (max-width: 760px) {
+@media (max-width: 950px) {
   .navlinks {
     display: none;
   }
@@ -10,14 +10,15 @@
   .navlinks {
     position: absolute;
     display: block;
-    background: rgb(216, 216, 216);
+    background: rgb(0, 0, 0);
     width: 100%;
-    top: 3rem;
+    top: 3.8rem;
     left: 0;
     right: 0;
-    transform: translateY(-150%);
-    z-index: 30;
-    transition: all 0.3s;
+    /* transform: translateY(-150%); */
+    z-index: -15;
+    transition: all 0.4s;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .navlinks a {
     display: flex;
