@@ -42,7 +42,7 @@ label[for="dark"] {
 }
 .dark-theme {
   background-color: black;
-  color: white;
+  color: var(--black-color);
 }
 .light-theme {
   background-color: white;
