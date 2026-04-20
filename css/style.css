@@ -441,13 +441,15 @@ label[for="dark"] {
   /* text-shadow: 1px 1px 1px var(--black-color); */
   margin: 1rem 0;
   padding: 2rem 0;
+  word-spacing: 0.3rem;
 }
 .copyright span {
   color: var(--main-color);
   border-radius: 0.2rem;
-  padding: 0.2rem 0.3rem;
+  padding: 0.1rem 0.3rem;
   background-color: var(--gray-color);
   font-weight: var(--font-weight);
+  line-height: 0.5rem;
 }
 /* upTo  */
 .upto {
@@ -460,7 +462,3 @@ label[for="dark"] {
   padding: 0.5rem;
   border-radius: 0.2rem;
 }
-/* .upto:hover {
-  background-color: var(--secondary-color);
-  transition: ease 0.3s;
-} */
