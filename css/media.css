@@ -7,7 +7,7 @@
     font-size: 2rem;
     cursor: pointer;
   }
-  .hidden {
+  .navlinks {
     position: absolute;
     display: block;
     background: rgb(216, 216, 216);
@@ -16,9 +16,10 @@
     left: 0;
     right: 0;
     transform: translateY(-150%);
-    z-index: 3;
+    z-index: 30;
+    transition: all 0.3s;
   }
-  .hidden a {
+  .navlinks a {
     display: flex;
   }
 }

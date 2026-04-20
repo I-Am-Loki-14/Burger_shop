@@ -14,15 +14,44 @@
   --font-weight: bold;
   --main-color: #48a111;
   --secondary-color: #eeffeb99;
-  --para-color: #545454;
+  --para-color: #5b5959;
   --h1-color: #000000;
   --black-color: #2c2c2c;
   --white-color: #ffffff;
 }
+
+/* Dark Vs Light Mode  */
+.light_dark {
+  align-items: center;
+}
+label[for="light"] {
+  color: white;
+}
+label[for="dark"] {
+  color: black;
+}
+.light_dark label {
+  background-color: var(--main-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-family);
+  text-align: center;
+  cursor: pointer;
+}
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+/* Hero Section  */
 .hero_section {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   position: relative;
   display: flex;
   justify-content: center;
@@ -33,14 +62,18 @@
 .menubar {
   display: none;
   border: none;
+  background-color: transparent;
+}
+.navlinks.show {
+  transform: translateY(0) !important;
 }
 
 /* menubar  */
 .nav-link_container {
+  backdrop-filter: blur(3px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--gray-color);
   padding: 0.2rem 2rem;
   width: 100%;
   position: fixed;
@@ -121,8 +154,8 @@
   border: 1px solid var(--main-color);
 }
 .hero_card .btn_1:hover {
-  background-color: var(--secondary-color);
-  color: var(--main-color);
+  background-color: var(--main-color);
+  color: var(--black-color);
 }
 .hero_card .btn_2:hover {
   background-color: var(--main-color);
@@ -237,7 +270,7 @@
 /* service section  */
 .service {
   width: 100%;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   background-attachment: fixed;
   padding: 2.5rem;
   display: flex;
@@ -289,6 +322,6 @@
 .contact {
   width: 100%;
   min-height: 100vh;
-  background-color: pink;
+  /* background-color: pink; */
   background-attachment: fixed;
 }
